@@ -8,7 +8,14 @@
 
 Unity 6 · C# · URP · iOS (iPhone + iPad) · Python level-generation pipeline · Blender
 
+<!-- App Store: replace the line below with the live link when the app is published, e.g.
+<a href="https://apps.apple.com/app/idXXXXXXXXXX"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="48" alt="Download on the App Store"/></a>
+-->
+**App Store:** coming soon (v1.0.0 is in review)
+
 </div>
+
+### Store screenshots
 
 <p align="center">
   <img src="store/AppStore_Screenshots/phone/01_Logo_Cat.png" width="19%"/>
@@ -17,6 +24,16 @@ Unity 6 · C# · URP · iOS (iPhone + iPad) · Python level-generation pipeline 
   <img src="store/AppStore_Screenshots/phone/04_UFO_Snowman.png" width="19%"/>
   <img src="store/AppStore_Screenshots/phone/05_Collection.png" width="19%"/>
 </p>
+
+### In-game
+
+<p align="center">
+  <img src="docs/screenshots/home.png" width="24%" alt="Home: level map"/>
+  <img src="docs/screenshots/game.png" width="24%" alt="Gameplay: board, orbit and pixel picture"/>
+  <img src="docs/screenshots/shop.png" width="24%" alt="Shop"/>
+  <img src="docs/screenshots/collection.png" width="24%" alt="Collection of hidden pictures"/>
+</p>
+<p align="center"><sub>Home map · Level 25 (hangar board, orbit, pixel picture, boosters) · Shop · Collection</sub></p>
 
 ---
 
@@ -377,7 +394,7 @@ astroflowjam/
 │  └─ pixel/                 early pixel-art studies
 ├─ audio/                    sound effects
 ├─ store/                    App Store screenshots, icon, listing copy
-└─ docs/                     game design documents (GDD v0.1, v0.2)
+└─ docs/                     game design documents (GDD v0.1, v0.2), in-game screenshots
 ```
 
 ---
