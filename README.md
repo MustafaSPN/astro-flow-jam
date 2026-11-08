@@ -33,7 +33,7 @@ Unity 6 · C# · URP · iOS (iPhone + iPad) · Python level-generation pipeline 
   <img src="docs/screenshots/shop.png" width="24%" alt="Shop"/>
   <img src="docs/screenshots/collection.png" width="24%" alt="Collection of hidden pictures"/>
 </p>
-<p align="center"><sub>Home map · Level 25 (hangar board, orbit, pixel picture, boosters) · Shop · Collection</sub></p>
+<p align="center"><sub>Home map · Level 88 (hangar board with frozen and one-way blocks; orbit; pixel picture; boosters) · Shop · Collection</sub></p>
 
 ---
 
