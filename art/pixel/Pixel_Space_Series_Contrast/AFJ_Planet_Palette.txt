@@ -1,0 +1,4 @@
+#1B1941: 160 pixels (40.0%)
+#FFD436: 79 pixels (19.75%)
+#EC4899: 65 pixels (16.25%)
+#39CEAC: 96 pixels (24.0%)

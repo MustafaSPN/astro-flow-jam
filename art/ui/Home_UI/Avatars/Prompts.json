@@ -1,0 +1,45 @@
+{
+  "method": "built-in imagegen",
+  "assets": [
+    {
+      "name": "Black_Man",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-85faba70-3a85-40c7-9a6f-352086644931.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cheerful Black male astronaut with deep brown skin and short tightly curled black hair. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "Black_Woman",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-d34aec63-f501-43c0-a983-0f0910971fad.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cheerful Black female astronaut with deep brown skin and neatly styled curly black hair visible inside the helmet. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "White_Man",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-3b1386d8-a7c4-4901-bdcf-a732dcbe7693.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cheerful white male astronaut with light skin and short brown hair. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "White_Woman",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-0c7ce018-8aa9-4b9e-a020-b7232401a70f.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cheerful white female astronaut with light skin and softly swept auburn hair inside the helmet. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "Cat",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-cdbaca74-d628-42aa-b990-24a5810df9b0.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cute cheerful cat astronaut, recognizable feline face, small pink nose, whiskers and triangular ears accommodated inside the helmet. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "Dog",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-0218e627-efe4-402e-b430-f8ce76e9fa62.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cute cheerful dog astronaut, golden tan fur, floppy ears, friendly short muzzle and black nose. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "Fox",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-9cea0c39-fd13-454e-8d84-e9c17cd16a8d.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cute cheerful fox astronaut, orange fur, cream muzzle, dark ear tips, recognizable fox face. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    },
+    {
+      "name": "Elephant",
+      "path": "/Users/sepen/.codex/generated_images/01a15f9b-0699-7b12-843f-f6a46afd4e96/exec-f97a8dde-b577-4f43-8aa7-8a31af44d183.png",
+      "prompt": "Use case: style-transfer. Create ONE standalone Astro Flow Jam avatar PNG variation of the provided reference. Subject: a cute cheerful elephant astronaut, soft gray skin, large rounded ears accommodated in the helmet, short curled trunk visible in front of the face. Match the reference's cute polished rounded mobile puzzle-game illustration style, large expressive eyes, happy smile, glossy highlights and friendly proportions. Keep the same circular bright cyan and blue frame, navy interior, white and blue astronaut helmet and suit, chest-up framing, face scale, lighting and margin as the reference. Change only the character identity/species. Keep the whole badge fully visible. Match original canvas aspect ratio 1286:1223, ideally 1286x1223 pixels. Outside the circular frame genuinely transparent, inside navy. No text, no labels, no extra objects, no collage. Each animal wears the matching astronaut helmet and suit."
+    }
+  ]
+}

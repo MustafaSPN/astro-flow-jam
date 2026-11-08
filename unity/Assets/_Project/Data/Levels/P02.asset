@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8eedf5897d948d7b83400ddb9c9554, type: 3}
+  m_Name: P02
+  m_EditorClassIdentifier: AstroFlowJam::AstroFlowJam.LevelData
+  levelId: P02
+  displayName: "Prototip \u2013 Jam testi"
+  isHard: 0
+  introducesMechanic: big-rocket
+  boardWidth: 6
+  boardHeight: 6
+  rockets:
+  - id: R1
+    color: 0
+    origin: {x: 0, y: 4}
+    size: {x: 2, y: 1}
+    capacity: 40
+  - id: Y1
+    color: 3
+    origin: {x: 1, y: 5}
+    size: {x: 1, y: 1}
+    capacity: 20
+  - id: B1
+    color: 1
+    origin: {x: 4, y: 3}
+    size: {x: 1, y: 2}
+    capacity: 40
+  - id: G1
+    color: 2
+    origin: {x: 2, y: 3}
+    size: {x: 1, y: 1}
+    capacity: 20
+  - id: Y2
+    color: 3
+    origin: {x: 4, y: 1}
+    size: {x: 1, y: 2}
+    capacity: 40
+  - id: B2
+    color: 1
+    origin: {x: 1, y: 1}
+    size: {x: 2, y: 1}
+    capacity: 40
+  - id: G2
+    color: 2
+    origin: {x: 5, y: 0}
+    size: {x: 1, y: 1}
+    capacity: 20
+  exits:
+  - color: 0
+    edge: 0
+    start: 0
+    width: 2
+  - color: 1
+    edge: 0
+    start: 4
+    width: 1
+  - color: 2
+    edge: 3
+    start: 3
+    width: 1
+  - color: 3
+    edge: 2
+    start: 1
+    width: 2
+  - color: 1
+    edge: 1
+    start: 2
+    width: 2
+  timeLimit: 150
+  orbitCapacity: 5
+  orbitLapSeconds: 8
+  collectionRate: 8
+  fastForwardMultiplier: 2
+  deadlockLaps: 2

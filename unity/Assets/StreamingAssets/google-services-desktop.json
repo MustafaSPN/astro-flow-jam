@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "756181807212",
+    "project_id": "astro-flow-jam",
+    "storage_bucket": "astro-flow-jam.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756181807212:ios:260ff2d0c980fcbda26849",
+        "android_client_info": {
+          "package_name": "com.sepen.astroflowjam"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfztOHT5rHnu9sesfCq8gBiY-mGaFsQM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

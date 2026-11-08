@@ -1,0 +1,7 @@
+{
+    "name": "AstroFlowJam.Editor",
+    "rootNamespace": "AstroFlowJam.Editor",
+    "references": ["AstroFlowJam.Core", "AstroFlowJam"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": false
+}

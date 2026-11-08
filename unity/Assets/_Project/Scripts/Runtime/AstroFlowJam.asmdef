@@ -1,0 +1,13 @@
+{
+    "name": "AstroFlowJam",
+    "rootNamespace": "AstroFlowJam",
+    "references": [
+        "AstroFlowJam.Core",
+        "Unity.InputSystem",
+        "Unity.Purchasing",
+        "UnityEngine.UI",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "autoReferenced": true
+}

@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8eedf5897d948d7b83400ddb9c9554, type: 3}
+  m_Name: P079
+  m_EditorClassIdentifier: AstroFlowJam::AstroFlowJam.LevelData
+  levelId: P079
+  displayName: "B\xF6l\xFCm 79 \u2013 cad\u0131 \u015Fapkas\u0131"
+  isHard: 1
+  introducesMechanic: designer
+  boardWidth: 7
+  boardHeight: 9
+  rockets:
+  - id: n1
+    color: 27
+    origin: {x: 1, y: 3}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 52
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: n2
+    color: 27
+    origin: {x: 4, y: 5}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 52
+    isBlocker: 0
+    axis: 1
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: n3
+    color: 27
+    origin: {x: 3, y: 2}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 52
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: n4
+    color: 27
+    origin: {x: 5, y: 7}
+    size: {x: 2, y: 2}
+    shape:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    capacity: 78
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: n5
+    color: 27
+    origin: {x: 0, y: 0}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 50
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: n6
+    color: 27
+    origin: {x: 1, y: 6}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 50
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: n7
+    color: 27
+    origin: {x: 4, y: 8}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 50
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 1
+    innerColor: 10
+    innerCapacity: 50
+  - id: n8
+    color: 27
+    origin: {x: 5, y: 2}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 50
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 69
+    color: 10
+    origin: {x: 2, y: 4}
+    size: {x: 2, y: 3}
+    shape:
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 1, y: 2}
+    - {x: 0, y: 1}
+    capacity: 96
+    isBlocker: 0
+    axis: 0
+    ice: 8
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: e10
+    color: 18
+    origin: {x: 1, y: 2}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 48
+    isBlocker: 0
+    axis: 0
+    ice: 6
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: e11
+    color: 18
+    origin: {x: 3, y: 8}
+    size: {x: 1, y: 1}
+    shape: []
+    capacity: 24
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 212
+    color: 6
+    origin: {x: 5, y: 1}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 44
+    isBlocker: 0
+    axis: 2
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 213
+    color: 6
+    origin: {x: 3, y: 1}
+    size: {x: 1, y: 1}
+    shape: []
+    capacity: 21
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 414
+    color: 8
+    origin: {x: 3, y: 0}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 56
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: w15
+    color: 36
+    origin: {x: 1, y: 0}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 40
+    isBlocker: 0
+    axis: 0
+    ice: 10
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: o16
+    color: 28
+    origin: {x: 2, y: 1}
+    size: {x: 1, y: 1}
+    shape: []
+    capacity: 23
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: o17
+    color: 28
+    origin: {x: 1, y: 5}
+    size: {x: 1, y: 1}
+    shape: []
+    capacity: 23
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 1
+    innerColor: 8
+    innerCapacity: 28
+  - id: g18
+    color: 20
+    origin: {x: 3, y: 7}
+    size: {x: 1, y: 1}
+    shape: []
+    capacity: 16
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  exits:
+  - color: 27
+    edge: 3
+    start: 5
+    width: 2
+  - color: 10
+    edge: 0
+    start: 3
+    width: 2
+  - color: 18
+    edge: 2
+    start: 8
+    width: 1
+  - color: 6
+    edge: 1
+    start: 5
+    width: 2
+  - color: 8
+    edge: 1
+    start: 2
+    width: 2
+  - color: 36
+    edge: 3
+    start: 8
+    width: 1
+  - color: 28
+    edge: 2
+    start: 5
+    width: 1
+  - color: 20
+    edge: 2
+    start: 0
+    width: 2
+  holes:
+  - {x: 0, y: 2}
+  - {x: 0, y: 3}
+  - {x: 0, y: 4}
+  - {x: 6, y: 2}
+  - {x: 6, y: 3}
+  - {x: 6, y: 4}
+  asteroids:
+  - shape: 1
+    origin: {x: 4, y: 3}
+    rotation: 1
+    count: 0
+  - shape: 1
+    origin: {x: 4, y: 1}
+    rotation: 1
+    count: 0
+  pictureName: P079_Hidden
+  beadColumns: 44
+  beadRows: 43
+  beadLayout: .....................ee.........................................n66n........................................n66n.......................................n6666n......................................n6nn6n.....................................666nn666....................................66nnnn66w...................................66nnnn66w..................................nnnnnnggnn..................................nnnnnnnnnn.................................nonnnnnnnnon................................noonnnnnnoon................................noonnnnnnooo...............................nnn66nnnn66oon..............................nnn66enne66nnn.............................nnnn6eennee6nnnn............................nn666eennee666nn...........................nenn66enoone66nnen..........................nenn66enoone66nnen..........................nennn66noone6nnnen.........................neennnnnnoonnnnnneen........................nennnnnnnoonnwnnnnen........................nennnn66noonwwnnnnen.......................n66nnnwwwwnnwwwwnnnnnn......................nnnnnwwwwwnnwwwwwnnnnn.....................22nnnwwwwwwnnwwwwwwnnn22...................n44422nnww22222wwwnn224442................nnn4444422224444442222444442nn............nnnnn4444444424222242244444442nnnn.......nnnnnnnnn4444444242242424444444nnnnnnnnn...neennnnnnnn24444424244242444442nnnnnnnneen..neennnnnon6622444242222424442266nonnnnnnen.n66nnnnooonn666622244444422226666oooonnnn66nn66nnnnoooggnnn66662222226666nnnggooonnnn66n.6666eeoogggnnnnn6666nn6666nnnnngggooee6666...6666eeoggnnnnnnnn6nnnn6nnnnnnnnggoee6666.....6666eennnnnnnnnnnnnnnnnnnnnnnnnnee6666.......nn666eennnnnnnnnnnnnnnnnnnnnnee666nn..........nnnneeennnnnnnnnnnnnnnnnneeennnn...............nnn666666666nn666666666nnn....................nnnnneee66nn66eee6nnnn..........................nnnneeeeeennn...................................nnnnnn...................
+  contentVersion: 0
+  timeLimit: 100
+  orbitCapacity: 5
+  slotCount: 5

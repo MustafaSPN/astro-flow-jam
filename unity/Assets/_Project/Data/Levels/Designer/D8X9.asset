@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8eedf5897d948d7b83400ddb9c9554, type: 3}
+  m_Name: D8X9
+  m_EditorClassIdentifier: AstroFlowJam::AstroFlowJam.LevelData
+  levelId: D8X9
+  displayName: "Deneme \u2013 8\xD79 tahta"
+  isHard: 0
+  introducesMechanic: designer
+  boardWidth: 8
+  boardHeight: 9
+  rockets:
+  - id: 51
+    color: 9
+    origin: {x: 0, y: 6}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 52
+    color: 9
+    origin: {x: 2, y: 6}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 53
+    color: 9
+    origin: {x: 4, y: 6}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 54
+    color: 9
+    origin: {x: 6, y: 6}
+    size: {x: 1, y: 2}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 85
+    color: 12
+    origin: {x: 0, y: 0}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 86
+    color: 12
+    origin: {x: 2, y: 0}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 87
+    color: 12
+    origin: {x: 4, y: 0}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  - id: 88
+    color: 12
+    origin: {x: 6, y: 0}
+    size: {x: 2, y: 1}
+    shape: []
+    capacity: 32
+    isBlocker: 0
+    axis: 0
+    ice: 0
+    keyGroup: 0
+    lockGroup: 0
+    layered: 0
+    innerColor: 0
+    innerCapacity: 0
+  exits:
+  - color: 9
+    edge: 0
+    start: 3
+    width: 2
+  - color: 12
+    edge: 1
+    start: 6
+    width: 2
+  holes: []
+  asteroids:
+  - shape: 0
+    origin: {x: 3, y: 4}
+    rotation: 0
+    count: 0
+  - shape: 1
+    origin: {x: 5, y: 4}
+    rotation: 0
+    count: 0
+  pictureName: D8X9_Hidden
+  beadColumns: 16
+  beadRows: 16
+  beadLayout: 5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555588888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+  contentVersion: 0
+  timeLimit: 120
+  orbitCapacity: 5
+  slotCount: 5

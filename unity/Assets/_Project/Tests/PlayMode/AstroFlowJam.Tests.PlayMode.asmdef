@@ -1,0 +1,9 @@
+{
+    "name": "AstroFlowJam.Tests.PlayMode",
+    "rootNamespace": "AstroFlowJam.Tests",
+    "references": ["AstroFlowJam.Core", "AstroFlowJam", "Unity.InputSystem", "UnityEngine.TestRunner", "UnityEditor.TestRunner"],
+    "overrideReferences": true,
+    "precompiledReferences": ["nunit.framework.dll"],
+    "autoReferenced": false,
+    "defineConstraints": ["UNITY_INCLUDE_TESTS"]
+}

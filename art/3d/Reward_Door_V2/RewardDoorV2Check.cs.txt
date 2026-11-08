@@ -1,0 +1,28 @@
+using System;
+using System.Linq;
+using System.Reflection;
+using UnityEditor;
+using UnityEngine;
+namespace AstroFlowJam.Editor {
+public static class RewardDoorV2Check {
+ public static void Run(){
+ var lib=AssetDatabase.LoadAssetAtPath<ModelLibrary>("Assets/_Project/Data/ModelLibrary.asset");
+ if(!lib.rewardDoor || !lib.padlock)throw new Exception("Existing library references broken");
+ ModelKit.Init(Shader.Find("AstroFlowJam/ClippableLit"));
+ var go=new GameObject("Validation");var door=go.AddComponent<RewardDoor>();door.Build(lib.rewardDoor,lib.padlock,lib.neonMaterial,5.9f);
+ var ts=go.GetComponentsInChildren<Transform>(true);
+ var left=ts.First(t=>t.name=="Door_Left" || t.name.StartsWith("Door_Left."));
+ var right=ts.First(t=>t.name=="Door_Right" || t.name.StartsWith("Door_Right."));
+ var active=go.GetComponentsInChildren<Renderer>();
+ if(active.Length<8)throw new Exception("Missing renderers");
+ var bounds=active[0].bounds;foreach(var r in active)bounds.Encapsulate(r.bounds);
+ if(Mathf.Abs(bounds.size.x-5.9f)>.05f || Mathf.Abs(bounds.size.y-5.9f)>.05f)throw new Exception("Incorrect game footprint "+bounds);
+ var a=left.position;var b=right.position;door.Break(Vector3.up);
+ typeof(RewardDoor).GetField("openTime",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(door,1f);
+ typeof(RewardDoor).GetMethod("Update",BindingFlags.Instance|BindingFlags.NonPublic).Invoke(door,null);
+ if(left.position.x>=a.x-2 || right.position.x<=b.x+2)throw new Exception("Door sliding failed");
+ var result="PASS: original library references, 5.9 x 5.9 game footprint, separate active lock, existing Break/Update slides left and right. Renderers="+active.Length;
+ System.IO.File.WriteAllText("/Users/sepen/Desktop/gaming/Reward_Door_V2/Unity_Validation.txt",result);
+ Debug.Log(result);UnityEngine.Object.DestroyImmediate(go);
+ }
+}}

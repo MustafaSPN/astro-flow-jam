@@ -1,0 +1,290 @@
+[
+  {
+    "file": "Badge_OneTime.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Coins_50000.png",
+    "size": [
+      1312,
+      1199
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Shop_Icon.png",
+    "size": [
+      1278,
+      1230
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Infinite_Lives.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Home_Rocket_Icon.png",
+    "size": [
+      1313,
+      1198
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Badge_BestValue.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Booster_Ek_Alan.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Settings.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Crate_Starter.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Coins_100000.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Plus_Button.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Coins_25000.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Background_Simple.png",
+    "size": [
+      851,
+      1848
+    ],
+    "alpha_channel": false
+  },
+  {
+    "file": "Booster_Solucan_Deligi.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Booster_Freeze.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Heart.png",
+    "size": [
+      1374,
+      1145
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Crate_Large.png",
+    "size": [
+      1312,
+      1199
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Bottom_Bar.png",
+    "size": [
+      2184,
+      720
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Selected_Tab.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Avatar.png",
+    "size": [
+      1286,
+      1223
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Badge_Popular.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Coins_5000.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Crate_Small.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Close_Button.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Collection_Icon.png",
+    "size": [
+      1293,
+      1217
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Card_Cyan.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "No_Ads.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Coins_10000.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Booster_UFO.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Hud_Pill.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Play_Button.png",
+    "size": [
+      2048,
+      768
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Crate_Ultra.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Coin.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Crate_Mega.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Crate_Medium.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "alpha_channel": true
+  },
+  {
+    "file": "Card_Gold.png",
+    "size": [
+      2172,
+      724
+    ],
+    "alpha_channel": true
+  }
+]

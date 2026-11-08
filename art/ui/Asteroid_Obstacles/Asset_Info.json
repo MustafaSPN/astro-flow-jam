@@ -1,0 +1,70 @@
+{
+  "1x1": {
+    "cells": [
+      [
+        0,
+        0
+      ]
+    ],
+    "triangles": 480,
+    "pivot": "cell (0,0), ground z=0"
+  },
+  "1x2": {
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "triangles": 766,
+    "pivot": "cell (0,0), ground z=0"
+  },
+  "L": {
+    "cells": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "triangles": 1336,
+    "pivot": "cell (0,0), ground z=0"
+  },
+  "T": {
+    "cells": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "triangles": 1344,
+    "pivot": "cell (0,0), ground z=0"
+  }
+}

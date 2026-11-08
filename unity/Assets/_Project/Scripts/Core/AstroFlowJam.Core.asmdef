@@ -1,0 +1,6 @@
+{
+    "name": "AstroFlowJam.Core",
+    "rootNamespace": "AstroFlowJam.Core",
+    "references": [],
+    "autoReferenced": true
+}

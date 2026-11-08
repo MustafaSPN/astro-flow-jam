@@ -1,0 +1,527 @@
+Unity Editor version:    6000.3.27f1 (672d562a42a7)
+Branch:                  6000.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.6.2 (Build 25G83)
+Darwin version:          25.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Date:                    2026-10-25T22:26:41Z
+VBCSCompilerServerWatchdog: watching VBCSCompiler (PID 76008)
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-sepen doesn't exist
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Helpers/UnityLicensingClient.app/Contents/MacOS/Unity.Licensing.Client
+[Licensing::Module] Successfully launched the LicensingClient (PId: 76010)
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/MacOS/Unity
+-batchmode
+-nographics
+-quit
+-projectPath
+/Users/sepen/Desktop/gaming/AstroFlowJam
+-executeMethod
+AstroFlowJam.Editor.RewardDoorV2Check.Run
+-logFile
+/Users/sepen/Desktop/gaming/Reward_Door_V2/Unity_Import.log
+Successfully changed project path to: /Users/sepen/Desktop/gaming/AstroFlowJam
+/Users/sepen/Desktop/gaming/AstroFlowJam
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8440750464]  Target information:
+
+Player connection [8440750464]  * "[IP] 192.168.1.5 [Port] 55504 [Flags] 2 [Guid] 2445785040 [EditorId] 2445785040 [Version] 1048832 [Id] OSXEditor(0,192.168.1.5) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8440750464] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8440750464] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sepen" at "2026-10-25T22:26:42.227233Z"
+[Package Manager] Connected to IPC stream "Upm-76006" after 0.3 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              79897c96b04247f2a8c91612da0702a0
+  Correlation Id:          be1850226bf26ce63df4e1f45e8d9182
+  External correlation Id: 4120862294653832417
+  Machine Id:              k6nLrp0AM34nUA4bbcwvmPduoHM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-sepen" (connect: 0.38s, validation: 0.04s, handshake: 0.46s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sepen-notifications" at "2026-10-25T22:26:42.723937Z"
+[Licensing::Module] Connected to LicensingClient (PId: 76010, launch time: 0.00, total connection time: 0.88s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-HA6E-MKEB-EAHP-XXYP-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 5980686-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-HA6E-MKEB-EAHP-XXYP-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 5980686-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Module] Licensing Background thread has ended after 0.90s
+[Licensing::Module] Licensing is initialized (took 0.48s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-HA6E-MKEB-EAHP-XXYP-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 5980686-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 2 unused hashed content files
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-HA6E-MKEB-EAHP-XXYP-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 5980686-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.27f1 (672d562a42a7)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sepen/Desktop/gaming/AstroFlowJam/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56006
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.3.27f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.001511 seconds.
+- Loaded All Assemblies, in  0.385 seconds
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.364 seconds
+Domain Reload Profiling: 750ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (153ms)
+		LoadAssemblies (143ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (147ms)
+				TypeCache.ScanAssembly (132ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (365ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (334ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (102ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (97ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-HA6E-MKEB-EAHP-XXYP-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 5980686-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-HA6E-MKEB-EAHP-XXYP-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 5980686-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 57 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.navigation@2.0.16 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.ai.navigation@d0cf77b009bb)
+    com.unity.collab-proxy@2.13.6 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.1.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.ide.rider@570989d4a882)
+    com.unity.ide.visualstudio@2.0.26 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.1 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.inputsystem@2436e68c60c4)
+    com.unity.timeline@1.8.13 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.timeline@3a22918286f5)
+    com.unity.visualscripting@1.9.12 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.visualscripting@4edfcc09512f)
+    com.unity.searcher@4.9.5 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.searcher@a463122f2c00)
+    com.unity.burst@1.8.31 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.burst@bfa84123c21a)
+    com.unity.mathematics@1.3.3 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.7.1 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.collections@88d5bf65ce66)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.1 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.render-pipelines.universal@17.3.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.render-pipelines.universal@ee0b6bbace10)
+    com.unity.test-framework@1.6.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.test-framework@bd7f943e9647)
+    com.unity.ugui@2.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.ugui@c0ef89c047f6)
+    com.unity.modules.accessibility@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.ext.nunit@d8c07649098d)
+    com.unity.render-pipelines.core@17.3.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.render-pipelines.core@6c7e6aba313a)
+    com.unity.shadergraph@17.3.0 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.shadergraph@12f2ec01e6de)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: /Users/sepen/Desktop/gaming/AstroFlowJam/Library/PackageCache/com.unity.render-pipelines.universal-config@8dc1aab4af1d)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-bf686d79b1ce564a9072ee140d110189
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/sepen/Desktop/gaming/AstroFlowJam/
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 42.3875ms
+Starting: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /Users/sepen/Desktop/gaming/AstroFlowJam
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 0s149ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/900b0aE-inputdata.json
+*** Tundra requires additional run (0.13 seconds), 0 items updated, 457 evaluated
+Starting: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/netcorerun/netcorerun "/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/BuildPipeline/ScriptCompilationBuildProgram.exe" "Library/Bee/900b0aE.dag.json" "Library/Bee/900b0aE-inputdata.json" "Library/Bee/buildprogram0.traceevents"
+WorkingDir: /Users/sepen/Desktop/gaming/AstroFlowJam
+ExitCode: 0 Duration: 0s918ms
+Starting: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/900b0aE.dag" --continue-on-failure --dagfilejson="Library/Bee/900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: /Users/sepen/Desktop/gaming/AstroFlowJam
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly unityeditor.ios.extensions.xcode has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll" in favor of "/Applications/Unity/Hub/Editor/6000.3.27f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Resources/Scripting/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@bfa84123c21a/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 24.7794ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/900b0aE.dag/AstroFlowJam.Editor.dll, with 141 defines and 289 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 13.3422ms
+ExitCode: 0 Duration: 1s389ms
+Finished compiling graph: 868 nodes, 17351 flattened edges (14383 ToBuild, 146 ToUse), maximum node priority 1001
+[450/865    0s] WriteText Library/Bee/artifacts/900b0aE.dag/AstroFlowJam.Editor.rsp
+[662/865    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[861/865    0s] Csc Library/Bee/artifacts/900b0aE.dag/AstroFlowJam.Editor.dll (+2 others)
+[862/865    0s] ILPostProcess Library/Bee/artifacts/900b0aE.dag/post-processed/AstroFlowJam.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/900b0aE.dag/AstroFlowJam.Editor.dll, with 141 defines and 289 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[863/865    0s] CopyFiles Library/ScriptAssemblies/AstroFlowJam.Editor.pdb
+[864/865    0s] CopyFiles Library/ScriptAssemblies/AstroFlowJam.Editor.dll
+*** Tundra build success (1.37 seconds), 6 items updated, 865 evaluated
+AssetDatabase: script compilation time: 3.095507s
+Begin MonoManager ReloadAssembly
+Total cache size 87039872
+Total cache size after purge 87039872, took 00:00:00.1112863
+- Loaded All Assemblies, in  0.569 seconds
+Refreshing native plugins compatible for Editor in 2.10 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.659 seconds
+Domain Reload Profiling: 3228ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (250ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (124ms)
+			BuildScriptInfoCaches (39ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (2659ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2465ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (368ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (132ms)
+			ProcessInitializeOnLoadAttributes (1884ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Start importing Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx using Guid(c12989fc048b0456fbd7737c46ee6665) (FBXImporter)Launching external process: /Applications/Unity/Hub/Editor/6000.3.27f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.07 seconds
+A polygon of Mesh 'Icon_Lock_Body' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Icon_Lock_Body' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab.001' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab.001' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Status_Light' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Status_Light' in Assets/_Project/Art/Models/AFJ_Space_Padlock.fbx is self-intersecting and has been discarded.
+ -> (artifact id: '0a34af650f4f8fc3645337e4b869e4cb') in 0.164259625 seconds
+Start importing Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx using Guid(4317c3892b74543f8b60149979319c62) (FBXImporter)A polygon of Mesh 'Icon_Lock_Body' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Icon_Lock_Body' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab.001' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Magnetic_Buckle_Tab.001' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Status_Light' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+A polygon of Mesh 'Status_Light' in Assets/_Project/Art/Models/AFJ_Simple_Reward_Door.fbx is self-intersecting and has been discarded.
+ -> (artifact id: '516338c40824e0ccf6b346b844cc4128') in 0.021526417 seconds
+Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=10f5f8442c5974c308f24eacdf6343fc): Total: 8.005 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=25 ms, native=3765 ms
+		Asset DB Callback time: managed=492 ms, native=19 ms
+		Scripting: domain reloads=1, domain reload time=570 ms, compile time=3097 ms, other=35 ms
+		Project Asset Count: scripts=1363, non-scripts=2476
+		Asset File Changes: new=1, changed=3, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 14.448ms
+	ApplyChangesToAssetFolders: 0.263ms
+	Scan: 632.879ms
+	OnSourceAssetsModified: 0.548ms
+	CategorizeAssetsWithTransientArtifact: 56.896ms
+	ProcessAssetsWithTransientArtifactChanges: 49.363ms
+	CategorizeAssets: 71.463ms
+	ImportOutOfDateAssets: 2855.549ms (-430.631ms without children)
+		ImportManagerImport: 187.478ms (0.938ms without children)
+			ImportInProcess: 186.508ms
+			UpdateCategorizedAssets: 0.032ms
+		CompileScripts: 3096.726ms
+		ReloadNativeAssets: 0.033ms
+		UnloadImportedAssets: 0.736ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.631ms
+		InitializingProgressBar: 0.006ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.569ms
+	PostProcessAllAssets: 494.160ms
+	Hotreload: 3.664ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 1.902ms
+	PersistCurrentRevisions: 0.140ms
+	UnloadStreamsEnd: 0.000ms
+	GenerateScriptTypeHashes: 2.754ms
+	Untracked: 3823.720ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 0.069ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Astro Flow Jam
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6720 unused Assets / (1.5 MB). Loaded Objects now: 7564.
+Memory consumption went from 220.9 MB to 219.4 MB.
+Total: 7.568334 ms (FindLiveObjects: 0.368208 ms CreateObjectMapping: 0.228708 ms MarkObjects: 5.253292 ms  DeleteObjects: 1.717750 ms)
+
+PASS: original library references, 5.9 x 5.9 game footprint, separate active lock, existing Break/Update slides left and right. Renderers=12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+AstroFlowJam.Editor.RewardDoorV2Check:Run () (at Assets/_Project/Scripts/Editor/RewardDoorV2Check.cs:26)
+
+(Filename: Assets/_Project/Scripts/Editor/RewardDoorV2Check.cs Line: 26)
+
+Batchmode quit successfully invoked - shutting down!
+Thread 0x16c28f000 may have been prematurely finalized
+Curl error 42: Callback aborted
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] LicenseClient-sepen-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-sepen channel disconnected successfully.
+Thread 0x16c3a7000 may have been prematurely finalized
+Thread 0x16c433000 may have been prematurely finalized
+Thread 0x16c4bf000 may have been prematurely finalized
+Thread 0x16c5d7000 may have been prematurely finalized
+Thread 0x16c54b000 may have been prematurely finalized
+Thread 0x16c6ef000 may have been prematurely finalized
+Thread 0x16c663000 may have been prematurely finalized
+AcceleratorClientConnectionCallback - disconnected - :0
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+Cleanup mono
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      ALC ILPP context 1 is unloading
+debugger-agent: Unable to listen on 37
+[usbmuxd] Stop listen thread
+[usbmuxd] Error: 
+[usbmuxd] Listen thread exiting
+Exiting batchmode successfully now!
+[Package Manager] Server process was shutdown

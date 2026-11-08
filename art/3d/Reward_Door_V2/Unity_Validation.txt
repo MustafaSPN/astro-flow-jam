@@ -1,0 +1,1 @@
+PASS: original library references, 5.9 x 5.9 game footprint, separate active lock, existing Break/Update slides left and right. Renderers=12

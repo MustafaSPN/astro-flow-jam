@@ -1,0 +1,74 @@
+{
+  "AFJ_Direction_Arrow": {
+    "base_triangles": 472,
+    "children": 2,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Key_Emblem": {
+    "base_triangles": 1236,
+    "children": 5,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Lock_Hub": {
+    "base_triangles": 812,
+    "children": 6,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Lock_Arm_1Unit": {
+    "base_triangles": 92,
+    "children": 1,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Lock_Anchor": {
+    "base_triangles": 248,
+    "children": 2,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Lock_1x1": {
+    "base_triangles": 2172,
+    "children": 27,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Lock_L": {
+    "base_triangles": 1492,
+    "children": 17,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "AFJ_Lock_T": {
+    "base_triangles": 1832,
+    "children": 22,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}
