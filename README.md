@@ -166,11 +166,12 @@ Each booster unlocks at a set level with 2 free uses. After that it can be bough
   - **Remove Ads**, which removes interstitials only; rewarded ads stay available
   - Purchases are granted before they are confirmed, and transaction IDs are de-duplicated, so a crash mid-purchase never
     double-grants or loses an item.
-- **Ads (AdMob):** interstitials only after a win, starting at level 20, at most one per 60 seconds. Rewarded ads are
-  opt-in: an extra life, or double coins.
+- **Ads (Unity LevelPlay mediation, with ironSource Ads and Unity Ads bidding):** interstitials only after a win,
+  starting at level 20, at most one per 60 seconds. Rewarded ads are opt-in: an extra life, or double coins. The reward
+  buttons only appear while an ad is actually loaded, and failed loads retry with exponential backoff (10 s to 2 min).
 - **Privacy:**
   - Google UMP consent form for EEA, UK and Swiss players, plus a **Privacy Choices** button in Settings that only appears
-    there.
+    there. LevelPlay reads the resulting IAB TCF consent string.
   - Apple's App Tracking Transparency prompt is shown after level 3, not at first launch.
   - Firebase Analytics runs with ad-storage consent denied.
 
@@ -370,8 +371,8 @@ Unity -batchmode -quit -projectPath unity -executeMethod AstroFlowJam.Editor.Bui
 |---|---|---|
 | `Simulator` / `Device` | development builds with the DEV menu (coins, boosters, timer, level jump) | `AFJ_DEV` |
 | `SimulatorRelease` | store screenshots: release UI, tap the level badge to win | `AFJ_SHOTS` |
-| `DeviceRelease` | release build with Google test ad units, for on-device QA | none |
-| `AppStore` | the submission build with real AdMob units | `AFJ_STORE` |
+| `DeviceRelease` | release build for on-device QA (LevelPlay test suite enabled) | none |
+| `AppStore` | the submission build | `AFJ_STORE` |
 
 A post-process step (`IosPlistPatch`) adds the ATT usage text and the export-compliance flag, and weak-links
 `AppTrackingTransparency`. The generated Xcode workspace is archived and uploaded with `xcodebuild -exportArchive`.
@@ -398,7 +399,7 @@ astroflowjam/
 
 ## Status and credits
 
-- **Status:** v1.0.0 live on the [App Store](https://apps.apple.com/app/astro-flow-jam/id6832245906) (iPhone and iPad).
+- **Status:** live on the [App Store](https://apps.apple.com/app/astro-flow-jam/id6832245906) (iPhone and iPad). v1.0.1 moves ads from AdMob to Unity LevelPlay.
 - **Design, development, 3D models and art direction:** Mustafa Sepen.
 - Pixel pictures and hidden illustrations for later levels are produced by the image-model pipeline described above,
   then validated and quantized automatically.

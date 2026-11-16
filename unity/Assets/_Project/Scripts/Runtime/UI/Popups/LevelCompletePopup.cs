@@ -165,7 +165,24 @@ namespace AstroFlowJam
             popup.SetActive(true);
             coins.SetOnTop(true);
             popupTime = 0f;
+            UpdateClaimButtons();
         }
+
+        // "Claim x2" yalnız ödüllü reklam hazırken görünür; hazır değilse "Continue" onun yerine çıkar. Reklam pencere
+        // açıkken yüklenirse buton belirir.
+        void UpdateClaimButtons()
+        {
+            if (!subscribed)
+            {
+                subscribed = true;
+                Ads.RewardedReadyChanged += () => { if (popup && popup.activeSelf && !claiming && !adShowing) UpdateClaimButtons(); };
+            }
+            var ad = Ads.RewardedReady;
+            claimButton.gameObject.SetActive(ad);
+            claimOnce.anchoredPosition = new Vector2(0f, ad ? -585f : -440f);
+        }
+
+        bool subscribed;
 
         // multiplier 2: reklamlı (reklam sistemi henüz yok; doğrudan verilir), 1: reklamsız. Rozetteki miktar güncellenir.
         Text claimLabel;

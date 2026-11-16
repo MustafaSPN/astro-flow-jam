@@ -5,6 +5,7 @@
         "AstroFlowJam.Core",
         "Unity.InputSystem",
         "Unity.Purchasing",
+        "Unity.LevelPlay",
         "UnityEngine.UI",
         "Unity.RenderPipelines.Universal.Runtime",
         "Unity.RenderPipelines.Core.Runtime"

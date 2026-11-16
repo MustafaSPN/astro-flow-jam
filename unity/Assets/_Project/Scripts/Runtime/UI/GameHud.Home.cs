@@ -335,8 +335,10 @@ namespace AstroFlowJam
         /// <summary>Can bilgisi / can bitti penceresi: coinle doldurma ya da bekleme.</summary>
         public void ShowNoLives(bool empty = true)
         {
+            // Ödüllü reklam yalnız hazırsa sunulur ("+1 Life" butonu); hazır değilse yalnız coinle doldurma kalır.
+            var adReady = Ads.RewardedReady;
             ShowDialog(empty ? "Out of Lives" : "Lives", UiArt.Asset("Home/Heart"),
-                $"Next life in {Lives.NextText}", "Refill", Lives.RefillCost, "+1 Life",
+                $"Next life in {Lives.NextText}", "Refill", Lives.RefillCost, adReady ? "+1 Life" : null,
                 () =>
                 {
                     if (!Lives.TryRefill()) { DialogDenied(); HomeToast("Not enough coins"); return; }
@@ -356,9 +358,10 @@ namespace AstroFlowJam
                         Haptics.Select();
                         HomeToast("+1 life!");
                         if (Lives.IsFull) HideDialog();
+                        else ShowNoLives(empty);             // sıradaki reklam hazır değilse buton gizlenir
                     }, () => { DialogDenied(); HomeToast("Ad not ready, try again"); });
                 },
-                HideDialog, 220f, caption: $"Refill all {Lives.Max} lives", secondaryIcon: UiArt.Asset("Popup/ad_icon"), tapToClose: true);
+                HideDialog, 220f, caption: $"Refill all {Lives.Max} lives", secondaryIcon: adReady ? UiArt.Asset("Popup/ad_icon") : null, tapToClose: true);
             SetDialogIconText(Lives.Count.ToString());
         }
 

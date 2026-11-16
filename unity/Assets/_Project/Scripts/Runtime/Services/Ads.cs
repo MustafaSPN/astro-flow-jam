@@ -1,49 +1,48 @@
 using System;
-using GoogleMobileAds.Api;
 using GoogleMobileAds.Ump.Api;
+using Unity.Services.LevelPlay;
 using UnityEngine;
 
 namespace AstroFlowJam
 {
     /// <summary>
-    /// Reklamlar (AdMob): bölüm kazanıldıktan sonra geçiş reklamı (Remove Ads alındıysa yok), can penceresinde ödüllü reklam (her zaman). Bütün reklam çağrıları
-    /// buradan geçer. Oyun reklamı beklemez: reklam hazır değilse akış sürer, ödüllü reklamda ödül verilmez. Takip izni (ATT)
-    /// burada istenmez (bkz. Tracking). AB ve Birleşik Krallık onayı Google UMP ile sorulur; onaydan önce reklam yüklenmez. Gerçek reklam birimleri
-    /// yalnız App Store derlemesinde (AFJ_STORE), diğer derlemelerde Google'ın test birimleri.
+    /// Reklamlar (Unity LevelPlay): bölüm kazanıldıktan sonra geçiş reklamı (Remove Ads alındıysa yok), can penceresinde ve
+    /// ödül ekranında ödüllü reklam. Bütün reklam çağrıları buradan geçer. Oyun reklamı beklemez: reklam hazır değilse akış
+    /// sürer, ödüllü reklamda ödül verilmez; ödüllü reklam butonları <see cref="RewardedReady"/> ile yalnız reklam hazırken
+    /// görünür. Takip izni (ATT) burada istenmez (bkz. Tracking). AB, Birleşik Krallık ve İsviçre onayı Google UMP ile
+    /// sorulur; LevelPlay onayı UMP'nin yazdığı IAB TCF kaydından okur.
     /// </summary>
     public static class Ads
     {
-#if AFJ_STORE
-        // App Store derlemesi (BuildIOS.AppStore): AdMob hesabındaki gerçek reklam birimleri.
-        const string InterstitialUnit = "ca-app-pub-1035801224777804/3289453756";
-        const string RewardedUnit = "ca-app-pub-1035801224777804/3313504484";
-#else
-        // Geliştirme ve test derlemeleri: Google'ın test birimleri. Kendi cihazında gerçek reklama tıklamak AdMob
-        // hesabını riske atar.
-        const string InterstitialUnit = "ca-app-pub-3940256099942544/4411468910";
-        const string RewardedUnit = "ca-app-pub-3940256099942544/1712485313";
-#endif
+        const string AppKey = "299ada15d";
+        const string InterstitialUnit = "in7xe4pfnr4dcs6h";
+        const string RewardedUnit = "y11jypsz8999tflg";
+
         const int InterstitialFirstLevel = 20;
         const float FullscreenGapSeconds = 60f;
-
-        static InterstitialAd interstitial;
-        static RewardedAd rewarded;
-        static bool started, rewardedLoading, interstitialLoading;
-        static int rewardedFails, interstitialFails;
         const float RetryBaseSeconds = 10f, RetryMaxSeconds = 120f;
+        const int RewardWaitMs = 500;   // ödül olayı kapanmadan sonra gelebilir: kapanınca bu kadar beklenir
+
+        static LevelPlayInterstitialAd interstitial;
+        static LevelPlayRewardedAd rewarded;
+        static bool initStarted, ready, rewardedLoading, interstitialLoading;
+        static int rewardedFails, interstitialFails;
         static float lastFullscreenAt = float.NegativeInfinity;
+
+        /// <summary>Ödüllü reklam gösterilmeye hazır mı (butonlar buna göre görünür).</summary>
+        public static bool RewardedReady => ready && rewarded != null && rewarded.IsAdReady();
+
+        /// <summary>Ödüllü reklamın hazır olma durumu değişti (yüklendi ya da gösterildi).</summary>
+        public static event Action RewardedReadyChanged;
 
         /// <summary>Oyun açılışında bir kez: önce onay akışı, sonra reklam SDK'sı.</summary>
         public static void Initialize()
         {
-            MobileAds.RaiseAdEventsOnUnityMainThread = true;
-            MobileAds.SetiOSAppPauseOnBackground(true);       // tam ekran reklamda oyun ve ses durur
             ConsentInformation.Update(new ConsentRequestParameters(), updateError =>
             {
                 if (updateError != null) { StartAds(); return; }
-                // Onay penceresi yalnız onayın zorunlu olduğu bölgelerde (AB, Birleşik Krallık, İsviçre) açılır. Böylece
-                // AdMob'da reklam takibi açıklama mesajı açık olsa bile Apple izni açılışta sorulmaz; izni Tracking,
-                // 3. bölümden sonra kendisi sorar.
+                // Onay penceresi yalnız onayın zorunlu olduğu bölgelerde açılır; Apple takip izni açılışta sorulmaz,
+                // Tracking 3. bölümden sonra kendisi sorar.
                 if (ConsentInformation.PrivacyOptionsRequirementStatus != PrivacyOptionsRequirementStatus.Required) { StartAds(); return; }
                 ConsentForm.LoadAndShowConsentFormIfRequired(_ => StartAds());
             });
@@ -71,60 +70,75 @@ namespace AstroFlowJam
 
         static void StartAds()
         {
-            // Onay mesajı henüz yayımlanmamışsa UMP hata verir; geliştirme derlemesi test reklamlarıyla yine çalışır.
-            if (started) return;
-            if (!ConsentInformation.CanRequestAds() && !DevTools.Enabled)
+            if (initStarted) return;
+            initStarted = true;
+            LevelPlay.SetMetaData("is_child_directed", "false");   // genel kitle (App Store'da Made for Kids değil)
+            if (!IsStoreBuild) LevelPlay.SetMetaData("is_test_suite", "enable");
+            LevelPlay.OnInitSuccess += _ =>
             {
-                Debug.LogWarning("[Ads] Consent does not allow ad requests yet");
-                return;
-            }
-            started = true;
-            MobileAds.Initialize(_ =>
+                ready = true;
+                LevelPlay.SetPauseGame(true);                       // tam ekran reklamda oyun ve ses durur
+                CreateAds();
+            };
+            LevelPlay.OnInitFailed += error =>
             {
-                LoadInterstitial();
-                LoadRewarded();
-            });
+                Debug.LogWarning($"[Ads] LevelPlay init failed: {error.ErrorCode} {error.ErrorMessage}");
+                initStarted = false;                                // sonra yeniden denenir
+                RetryLater(0, StartAds);
+            };
+            LevelPlay.OnImpressionDataReady += data =>
+            {
+                if (data.Revenue is double revenue)
+                    Telemetry.AdRevenue(data.AdFormat ?? "unknown", (long)Math.Round(revenue * 1_000_000d), "USD");
+            };
+            LevelPlay.Init(AppKey);
+        }
+
+#if AFJ_STORE
+        const bool IsStoreBuild = true;
+#else
+        const bool IsStoreBuild = false;
+#endif
+
+        static void CreateAds()
+        {
+            rewarded = new LevelPlayRewardedAd(RewardedUnit);
+            rewarded.OnAdLoaded += _ => { rewardedLoading = false; rewardedFails = 0; RewardedReadyChanged?.Invoke(); };
+            rewarded.OnAdLoadFailed += error =>
+            {
+                rewardedLoading = false;
+                Debug.LogWarning($"[Ads] Rewarded load failed: {error.ErrorCode} {error.ErrorMessage}");
+                RetryLater(rewardedFails++, LoadRewarded);
+            };
+
+            interstitial = new LevelPlayInterstitialAd(InterstitialUnit);
+            interstitial.OnAdLoaded += _ => { interstitialLoading = false; interstitialFails = 0; };
+            interstitial.OnAdLoadFailed += error =>
+            {
+                interstitialLoading = false;
+                Debug.LogWarning($"[Ads] Interstitial load failed: {error.ErrorCode} {error.ErrorMessage}");
+                RetryLater(interstitialFails++, LoadInterstitial);
+            };
+
+            LoadRewarded();
+            LoadInterstitial();
         }
 
         static void LoadInterstitial()
         {
-            if (!started || interstitial != null || interstitialLoading || ShopCatalog.AdsRemoved) return;
+            if (!ready || interstitial == null || interstitialLoading || interstitial.IsAdReady() || ShopCatalog.AdsRemoved) return;
             interstitialLoading = true;
-            InterstitialAd.Load(InterstitialUnit, new AdRequest(), (ad, error) =>
-            {
-                interstitialLoading = false;
-                if (error != null)
-                {
-                    Debug.LogWarning($"[Ads] Interstitial load failed: {error.GetMessage()}");
-                    RetryLater(interstitialFails++, LoadInterstitial);
-                    return;
-                }
-                interstitialFails = 0;
-                interstitial = ad;
-                ad.OnAdPaid += value => Telemetry.AdRevenue("interstitial", value.Value, value.CurrencyCode);
-            });
+            interstitial.LoadAd();
         }
 
         static void LoadRewarded()
         {
-            if (!started || rewarded != null || rewardedLoading) return;
+            if (!ready || rewarded == null || rewardedLoading || rewarded.IsAdReady()) return;
             rewardedLoading = true;
-            RewardedAd.Load(RewardedUnit, new AdRequest(), (ad, error) =>
-            {
-                rewardedLoading = false;
-                if (error != null)
-                {
-                    Debug.LogWarning($"[Ads] Rewarded load failed: {error.GetMessage()}");
-                    RetryLater(rewardedFails++, LoadRewarded);
-                    return;
-                }
-                rewardedFails = 0;
-                rewarded = ad;
-                ad.OnAdPaid += value => Telemetry.AdRevenue("rewarded", value.Value, value.CurrencyCode);
-            });
+            rewarded.LoadAd();
         }
 
-        // Reklam gelmezse (yeni reklam birimlerinde ve düşük doldurmada sık) artan aralıkla yeniden dener: 10, 20, 40 … en çok 120 sn.
+        // Reklam gelmezse artan aralıkla yeniden dener: 10, 20, 40 … en çok 120 sn.
         static async void RetryLater(int fails, Action load)
         {
             var delay = Mathf.Min(RetryBaseSeconds * (1 << Mathf.Min(fails, 4)), RetryMaxSeconds);
@@ -136,25 +150,33 @@ namespace AstroFlowJam
         public static void ShowInterstitialAfterWin(int levelNumber, Action done)
         {
             var due = !ShopCatalog.AdsRemoved && levelNumber >= InterstitialFirstLevel && Time.unscaledTime - lastFullscreenAt >= FullscreenGapSeconds;
-            if (!due || interstitial == null || !interstitial.CanShowAd())
+            if (!due || interstitial == null || !interstitial.IsAdReady())
             {
                 LoadInterstitial();
                 done();
                 return;
             }
-            var ad = interstitial;
-            interstitial = null;
+            var finished = false;
             void Finish()
             {
+                if (finished) return;
+                finished = true;
+                interstitial.OnAdClosed -= OnClosed;
+                interstitial.OnAdDisplayFailed -= OnFailed;
                 lastFullscreenAt = Time.unscaledTime;
-                ad.Destroy();
                 LoadInterstitial();
                 done();
             }
-            ad.OnAdFullScreenContentClosed += Finish;
-            ad.OnAdFullScreenContentFailed += _ => Finish();
+            void OnClosed(LevelPlayAdInfo _) => Finish();
+            void OnFailed(LevelPlayAdInfo _, LevelPlayAdError error)
+            {
+                Debug.LogWarning($"[Ads] Interstitial show failed: {error.ErrorCode} {error.ErrorMessage}");
+                Finish();
+            }
+            interstitial.OnAdClosed += OnClosed;
+            interstitial.OnAdDisplayFailed += OnFailed;
             Telemetry.InterstitialAd(levelNumber);
-            ad.Show();
+            interstitial.ShowAd();
         }
 
         /// <summary>
@@ -163,26 +185,46 @@ namespace AstroFlowJam
         /// </summary>
         public static void ShowRewarded(Action earned, Action unavailable, Action skipped = null)
         {
-            if (rewarded == null || !rewarded.CanShowAd())
+            if (!RewardedReady)
             {
                 LoadRewarded();
                 unavailable();
                 return;
             }
-            var ad = rewarded;
-            rewarded = null;
             var gotReward = false;
+            var finished = false;
             void Finish()
             {
+                if (finished) return;
+                finished = true;
+                rewarded.OnAdRewarded -= OnRewarded;
+                rewarded.OnAdClosed -= OnClosed;
+                rewarded.OnAdDisplayFailed -= OnFailed;
                 lastFullscreenAt = Time.unscaledTime;
-                ad.Destroy();
+                RewardedReadyChanged?.Invoke();
                 LoadRewarded();
                 if (gotReward) earned();
                 else skipped?.Invoke();
             }
-            ad.OnAdFullScreenContentClosed += Finish;
-            ad.OnAdFullScreenContentFailed += _ => Finish();
-            ad.Show(_ => gotReward = true);
+            void OnRewarded(LevelPlayAdInfo _, LevelPlayReward __)
+            {
+                gotReward = true;
+            }
+            async void OnClosed(LevelPlayAdInfo _)
+            {
+                if (!gotReward) await System.Threading.Tasks.Task.Delay(RewardWaitMs);   // ödül olayı geç gelebilir
+                Finish();
+            }
+            void OnFailed(LevelPlayAdInfo _, LevelPlayAdError error)
+            {
+                Debug.LogWarning($"[Ads] Rewarded show failed: {error.ErrorCode} {error.ErrorMessage}");
+                Finish();
+            }
+            rewarded.OnAdRewarded += OnRewarded;
+            rewarded.OnAdClosed += OnClosed;
+            rewarded.OnAdDisplayFailed += OnFailed;
+            rewarded.ShowAd();
+            RewardedReadyChanged?.Invoke();
         }
     }
 }
