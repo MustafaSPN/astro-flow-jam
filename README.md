@@ -8,10 +8,7 @@
 
 Unity 6 · C# · URP · iOS (iPhone + iPad) · Python level-generation pipeline · Blender
 
-<!-- App Store: replace the line below with the live link when the app is published, e.g.
-<a href="https://apps.apple.com/app/idXXXXXXXXXX"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="48" alt="Download on the App Store"/></a>
--->
-**App Store:** coming soon (v1.0.0 is in review)
+<a href="https://apps.apple.com/app/astro-flow-jam/id6832245906"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="48" alt="Download on the App Store"/></a>
 
 </div>
 
@@ -401,7 +398,7 @@ astroflowjam/
 
 ## Status and credits
 
-- **Status:** v1.0.0 submitted to the App Store (iPhone and iPad).
+- **Status:** v1.0.0 live on the [App Store](https://apps.apple.com/app/astro-flow-jam/id6832245906) (iPhone and iPad).
 - **Design, development, 3D models and art direction:** Mustafa Sepen.
 - Pixel pictures and hidden illustrations for later levels are produced by the image-model pipeline described above,
   then validated and quantized automatically.
